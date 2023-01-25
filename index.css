@@ -1,0 +1,500 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* background-color: #534891;
+	color: #f1f1f2;
+    #20024e; */
+}
+
+html {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  line-height: 1.15;
+  text-transform: capitalize;
+}
+
+
+body {
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	height: 100% !important;
+}
+ul{
+	list-style-type: none;
+}
+
+.darkTheme{
+	background-color:#534891;
+	color: #f1f1f1;
+}
+
+.lightTheme{
+	background-color: #f1f1f1;
+	color: #534891;
+}
+
+.flex{
+	display: flex;
+}
+
+.center{
+	/* text-align: center;
+	align-items: center; */
+	justify-content: center;
+	/* margin: auto;
+	padding: auto; */
+}
+.larger{
+	font-size: 1.5rem;
+}
+.smaller{
+	font-size: 0.5rem;
+}
+
+.active{
+	font-weight: 600;
+}
+.upperNav
+	{
+	transition-property: all;
+	transition-duration: 5s;
+	transition-delay: 50ms;
+	
+	
+	/* transform-style: flat; */
+}
+
+a{
+	text-decoration: none;
+	color: inherit;
+}
+.navLink{
+	font-size: 1.5rem; 
+	color:#20024e; 
+	font-weight: 400;
+	/* transition-property: border; */
+	transition:1s;
+}
+
+.navLink:hover{
+	border-bottom: 5px solid #534891;
+	transition: border-bottom 225ms cubic-bezier(.29, .19, .405, 1);
+	/* transform: scaleX(0); */
+	/* transform: skewX(50); */
+	/* transform-origin: 50%; */
+}
+
+.banner{
+	background-image:url(/image/bg1.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size:100% 100%;
+}
+
+.btn{
+	padding: 10px;
+	outline: none !important;
+	border: none;
+	border-radius: 5px;
+	font-size: 1.2rem;
+	transition: transform .6s;
+	
+
+}
+.btn:hover{
+	
+	background-color: #d73b00;
+	color: #f1f1f1;
+	/* outline: none; */
+	border: none;
+	font-size: 1.2rem;
+	/* transform: scale(5); */
+    background-color: #d73b00;
+    transition: background-color 1s ease-in-out;
+    
+}
+
+.container{
+	margin:0 10%;
+}
+/* Grid System  12 parts*/
+
+.row{
+	width: 100%;
+}
+
+
+.col-lg-1 {
+    width: 8.333333333333333%;
+}
+
+.col-lg-2 {
+    width: 16.66666666666667%;
+}
+
+.col-lg-3 {
+    width: 25%;
+}
+
+.col-lg-4 {
+    width: 33.33333333333333%;
+}
+
+.col-lg-5 {
+    width: 41.6666667%;
+}
+
+.col-lg-6 {
+    width: 50%;
+}
+
+.col-lg-7 {
+    width: 58.3333333%;
+}
+
+.col-lg-8 {
+    width: 66.66666666666666%;
+}
+
+.col-lg-9 {
+    width: 75%;
+}
+
+.col-lg-10 {
+    width: 83.3333333%;
+}
+
+.col-lg-11 {
+    width: 91.6666666%;
+}
+
+.col-lg-12 {
+    width: 100%;
+}
+
+/* margin and padding */
+.ma-0 {
+	margin: 0 !important;
+}
+
+.mt-0,
+.my-0 {
+	margin-top: 0 !important;
+}
+
+.mb-0,
+.my-0 {
+	margin-bottom: 0 !important;
+}
+
+.mr-0,
+.mx-0 {
+	margin-right: 0 !important;
+}
+
+.ml-0,
+.mx-0 {
+	margin-left: 0 !important;
+}
+
+.ma-1 {
+	margin: 0.25rem !important;
+}
+
+.mt-1,
+.my-1 {
+	margin-top: 0.25rem !important;
+}
+
+.mb-1,
+.my-1 {
+	margin-bottom: 0.25rem !important;
+}
+
+.mr-1,
+.mx-1 {
+	margin-right: 0.25rem !important;
+}
+
+.ml-1,
+.mx-1 {
+	margin-left: 0.25rem !important;
+}
+
+.ma-2 {
+	margin: 0.5rem !important;
+}
+
+.mt-2,
+.my-2 {
+	margin-top: 0.5rem !important;
+}
+
+.mb-2,
+.my-2 {
+	margin-bottom: 0.5rem !important;
+}
+
+.mr-2,
+.mx-2 {
+	margin-right: 0.5rem !important;
+}
+
+.ml-2,
+.mx-2 {
+	margin-left: 0.5rem !important;
+}
+
+.ma-3 {
+	margin: 1rem !important;
+}
+
+.mt-3,
+.my-3 {
+	margin-top: 1rem !important;
+}
+
+.mb-3,
+.my-3 {
+	margin-bottom: 1rem !important;
+}
+
+.mr-3,
+.mx-3 {
+	margin-right: 1rem !important;
+}
+
+.ml-3,
+.mx-3 {
+	margin-left: 1rem !important;
+}
+
+.ma-4 {
+	margin: 1.5rem !important;
+}
+
+.mt-4,
+.my-4 {
+	margin-top: 1.5rem !important;
+}
+
+.mr-4,
+.mx-4 {
+	margin-right: 1.5rem !important;
+}
+
+.mb-4,
+.my-4 {
+	margin-bottom: 1.5rem !important;
+}
+
+.ml-4,
+.mx-4 {
+	margin-left: 1.5rem !important;
+}
+
+.ma-5 {
+	margin: 2rem !important;
+}
+
+.mt-5,
+.my-5 {
+	margin-top: 2rem !important;
+}
+
+.mb-5,
+.my-5 {
+	margin-bottom: 2rem !important;
+}
+
+.mr-5,
+.mx-5 {
+	margin-right: 2rem !important;
+}
+
+.ml-5,
+.mx-5 {
+	margin-left: 2rem !important;
+}
+
+.pa-0 {
+	padding: 0 !important;
+}
+
+.pt-0,
+.py-0 {
+	padding-top: 0 !important;
+}
+
+.pb-0,
+.py-0 {
+	padding-bottom: 0 !important;
+}
+
+.pr-0,
+.px-0 {
+	padding-right: 0 !important;
+}
+
+.pl-0,
+.px-0 {
+	padding-left: 0 !important;
+}
+
+.pa-1 {
+	padding: 0.25rem !important;
+}
+
+.pt-1,
+.py-1 {
+	padding-top: 0.25rem !important;
+}
+
+.pb-1,
+.py-1 {
+	padding-bottom: 0.25rem !important;
+}
+
+.pr-1,
+.px-1 {
+	padding-right: 0.25rem !important;
+}
+
+.pl-1,
+.px-1 {
+	padding-left: 0.25rem !important;
+}
+
+.pa-2 {
+	padding: 0.5rem !important;
+}
+
+.pt-2,
+.py-2 {
+	padding-top: 0.5rem !important;
+}
+
+.pb-2,
+.py-2 {
+	padding-bottom: 0.5rem !important;
+}
+
+.pr-2,
+.px-2 {
+	padding-right: 0.5rem !important;
+}
+
+.pl-2,
+.px-2 {
+	padding-left: 0.5rem !important;
+}
+
+.pa-3 {
+	padding: 1rem !important;
+}
+
+.pt-3,
+.py-3 {
+	padding-top: 1rem !important;
+}
+
+.pb-3,
+.py-3 {
+	padding-bottom: 1rem !important;
+}
+
+.pr-3,
+.px-3 {
+	padding-right: 1rem !important;
+}
+
+.pl-3,
+.px-3 {
+	padding-left: 1rem !important;
+}
+
+.pa-4 {
+	padding: 1.5rem !important;
+}
+
+.pt-4,
+.py-4 {
+	padding-top: 1.5rem !important;
+}
+
+.pb-4,
+.py-4 {
+	padding-bottom: 1.5rem !important;
+}
+
+.pr-4,
+.px-4 {
+	padding-right: 1.5rem !important;
+}
+
+.pl-4,
+.px-4 {
+	padding-left: 1.5rem !important;
+}
+
+.pa-5 {
+	padding: 2rem !important;
+}
+
+.pt-5,
+.py-5 {
+	padding-top: 2rem !important;
+}
+
+.pb-5,
+.py-5 {
+	padding-bottom: 2rem !important;
+}
+
+.pr-5,
+.px-5 {
+	padding-right: 2rem !important;
+}
+
+.pl-5,
+.px-5 {
+	padding-left: 2rem !important;
+}
+
+.ma-auto {
+	margin: auto !important;
+}
+
+.mt-auto,
+.my-auto {
+	margin-top: auto !important;
+}
+
+.mb-auto,
+.my-auto {
+	margin-bottom: auto !important;
+}
+
+.mr-auto,
+.mx-auto {
+	margin-right: auto !important;
+}
+
+.ml-auto,
+.mx-auto {
+	margin-left: auto !important;
+}
+
+.px-auto {
+	padding-left: auto !important;
+	padding-right: auto !important;
+}
+
+.pa-auto {
+	padding: auto !important;
+}
+
+
